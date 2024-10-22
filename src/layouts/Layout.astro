@@ -9,20 +9,23 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang='en'>
+<html lang='es'>
 	<head>
-		<meta charset='UTF-8' />
-		<meta name='description' content='Astro description' />
+		<meta charset=' UTF-8' />
+		<meta name='description' content='Portafolio de Mario Sales - Desarrollador Web' />
 		<meta name='viewport' content='width=device-width' />
 		<link rel='icon' type='image/svg+xml' href='/favicon.svg' />
 		<!-- <meta name='generator' content={Astro.generator} /> -->
+		<link rel='preconnect' href='https://fonts.googleapis.com' />
+		<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+		<link href='https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap' rel='stylesheet' />
 		<ViewTransitions />
 		<title>{title}</title>
 	</head>
-	<body
-		class='absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-gray-50 dark:bg-gray-950
-	bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(217,216,255,0.5),rgba(255,255,255,0.9))]
-	dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]'>
+	<!-- <body
+		class='bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(217,216,255,0.5),rgba(255,255,255,0.9))]
+	dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]'> -->
+	<body>
 		<slot />
 	</body>
 </html>
@@ -39,20 +42,11 @@ const { title } = Astro.props;
 
 	html,
 	body {
-		height: 200%;
-		width: 100%;
+		height: 300% !important;
+		width: 100% !important;
 	}
 
 	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-	}
-
-	body {
-		display: flex;
-		/* justify-content: center; */
-		align-items: center;
-		flex-direction: column;
-		/* border: 1px white solid; */
+		font-family: 'Onest', system-ui, sans-serif;
 	}
 </style>

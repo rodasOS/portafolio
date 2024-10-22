@@ -5,20 +5,8 @@ import Presentation from '../components/Presentation.astro';
 ---
 
 <Layout title='Portafolio - Mario Sales'>
-	<main>
-		<Header />
+	<Header />
+	<main class='max-w-[700px] m-auto mt-[5em] p-6'>
 		<Presentation />
 	</main>
 </Layout>
-
-<style>
-	main {
-		height: 100%;
-		max-width: 900px;
-		border: 1px solid rgba(221, 172, 172, 0.486);
-		padding: 0.5em 8em;
-		display: flex;
-		flex-direction: column;
-		border-radius: 30px;
-	}
-</style>
