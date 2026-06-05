@@ -2,13 +2,21 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Presentation from '../components/Presentation.astro';
-import Proyects from '../components/Proyects.astro';
+import Experience from '../components/Experience.astro';
+import Skills from '../components/Skills.astro';
+import Projects from '../components/Projects.astro';
+import About from '../components/About.astro';
+import Contact from '../components/Contact.astro';
 ---
 
-<Layout title='Portafolio - Mario Sales'>
+<Layout title='Mario Sales — Desarrollador Full Stack'>
 	<Header />
-	<main class='max-w-[1000px] m-auto mt-[5em] p-6'>
+	<main class='max-w-4xl mx-auto px-6 pt-28 pb-24 space-y-32'>
 		<Presentation />
-		<Proyects />
+		<Experience />
+		<Skills />
+		<Projects />
+		<About />
+		<Contact />
 	</main>
 </Layout>

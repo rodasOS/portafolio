@@ -1,0 +1,46 @@
+---
+const categories = [
+	{
+		label: 'Frontend',
+		skills: ['Angular', 'React', 'Next.js', 'Tailwind CSS', 'TypeScript'],
+	},
+	{
+		label: 'Backend',
+		skills: ['NestJS', 'Laravel', '.NET (C#)', 'PHP', 'Node.js'],
+	},
+	{
+		label: 'Mobile',
+		skills: ['React Native', 'Ionic'],
+	},
+	{
+		label: 'DB & Herramientas',
+		skills: ['PostgreSQL', 'Git', 'Vercel', 'TypeScript'],
+	},
+]
+---
+
+<section id='habilidades' class='scroll-m-24 w-full'>
+
+	<div class='flex items-center gap-4 mb-12'>
+		<span class='font-mono text-accent text-sm'>02.</span>
+		<h2 class='text-2xl font-bold text-white'>Habilidades</h2>
+		<div style='height: 1px; background: #1d3550; flex: 1;'></div>
+	</div>
+
+	<div class='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4'>
+		{categories.map((cat) => (
+			<div style='background: #0c1a2c; border: 1px solid #1d3550; border-radius: 12px;' class='p-5 hover:border-accent/50 transition-all group'>
+				<p class='font-mono text-xs text-accent mb-4 uppercase tracking-widest'>{cat.label}</p>
+				<ul class='space-y-2'>
+					{cat.skills.map((skill) => (
+						<li class='flex items-center gap-2 text-sm text-slate-300'>
+							<span class='w-1 h-1 rounded-full bg-accent/60 shrink-0'></span>
+							{skill}
+						</li>
+					))}
+				</ul>
+			</div>
+		))}
+	</div>
+
+</section>
